@@ -15,6 +15,7 @@ public class Bullet : MonoBehaviour
     {
         
     }
+    
     private void OnCollisionEnter(Collision collision)
     {
         Debug.Log(collision.gameObject.tag);
@@ -24,6 +25,10 @@ public class Bullet : MonoBehaviour
             AudioSource audioSource = GetComponent<AudioSource>();
             audioSource.PlayOneShot(audioSource.clip);
             Destroy(this.gameObject, audioSource.clip.length);
+        }
+        else {
+            this.GetComponent<Rigidbody>().isKinematic = true;
+            Destroy(this.gameObject);
         }
     }
 }

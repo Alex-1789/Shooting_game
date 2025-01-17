@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\PlayerShoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\PlayerShoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\meles\\Pulpit\\informatyka\\II sem mgr\\mam\\schooter\\Assets\\NewBehaviourScript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\WeaponManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\WeaponManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Weapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\AutomaticWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\AutomaticWeapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\camera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Bullet.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Bullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:42:49.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerShoot.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\PlayerShoot.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerShoot.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\PlayerShoot.cs",
+              "RelativeToolTip": "Assets\\PlayerShoot.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBsAAABqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:42:48.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeaponManager.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\WeaponManager.cs",
+              "RelativeDocumentMoniker": "Assets\\WeaponManager.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\WeaponManager.cs",
+              "RelativeToolTip": "Assets\\WeaponManager.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAkwDMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:42:48.283Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Weapon.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Weapon.cs",
+              "RelativeDocumentMoniker": "Assets\\Weapon.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Weapon.cs",
+              "RelativeToolTip": "Assets\\Weapon.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAowBMAAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:42:48.289Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AutomaticWeapon.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\AutomaticWeapon.cs",
+              "RelativeDocumentMoniker": "Assets\\AutomaticWeapon.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\AutomaticWeapon.cs",
+              "RelativeToolTip": "Assets\\AutomaticWeapon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA+wAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:42:48.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewBehaviourScript.cs",
+              "DocumentMoniker": "C:\\Users\\meles\\Pulpit\\informatyka\\II sem mgr\\mam\\schooter\\Assets\\NewBehaviourScript.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\meles\\Pulpit\\informatyka\\II sem mgr\\mam\\schooter\\Assets\\NewBehaviourScript.cs",
+              "ToolTip": "C:\\Users\\meles\\Pulpit\\informatyka\\II sem mgr\\mam\\schooter\\Assets\\NewBehaviourScript.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Users\\meles\\Pulpit\\informatyka\\II sem mgr\\mam\\schooter\\Assets\\NewBehaviourScript.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T03:38:55.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "player.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\player.cs",
+              "RelativeDocumentMoniker": "Assets\\player.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\player.cs",
+              "RelativeToolTip": "Assets\\player.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAAAFsAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:42:48.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "camera.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\camera.cs",
+              "RelativeDocumentMoniker": "Assets\\camera.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\camera.cs",
+              "RelativeToolTip": "Assets\\camera.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:42:48.317Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

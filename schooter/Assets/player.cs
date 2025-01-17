@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class Player : MonoBehaviour
     private bool moveBackward = false;
     private bool moveLeft = false;
     private bool moveRight = false;
-    public float moveSpeed = 0.4f;
+    public float moveSpeed = 1f;
     public float jumpForce = 0.5f;
     private bool isOnStairs = false; // To track if the player is on the stairs
     public float stairsClimbSpeed = 1.0f; // Speed for climbing stairs
@@ -98,6 +99,12 @@ public class Player : MonoBehaviour
             isOnStairs = true;
             this.gameObject.GetComponent<Rigidbody>().useGravity = false;
             Debug.Log("on stairs");
+        }
+
+         if (collision.gameObject.CompareTag("Enemy Weapon"))
+        {
+            //Destroy(this.gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 
