@@ -13,23 +13,33 @@ public class EnemyBehavior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (playerTransform == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                playerTransform = player.transform;
+            }
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(count);
-        if(count == 2000){
-            Shooti();
+        if (count == 2000)
+        {
+            ShootEnemy();
             count = 0;
         }
-        else {
+        else
+        {
             count++;
         }
     }
 
-    private void Shooti(){
-           if (playerTransform == null) return;
+    private void ShootEnemy()
+    {
+        if (playerTransform == null) return;
 
         // Calculate direction toward the player
         Vector3 directionToPlayer = (playerTransform.position - bulletSpawnTransform.position).normalized;
@@ -42,5 +52,5 @@ public class EnemyBehavior : MonoBehaviour
             bulletRigidbody.AddForce(directionToPlayer * bulletSpeed, ForceMode.Impulse);
         }
     }
-    
+
 }

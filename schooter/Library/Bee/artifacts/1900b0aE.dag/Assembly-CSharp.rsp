@@ -370,6 +370,7 @@
 "Assets/camera.cs"
 "Assets/Enemy.cs"
 "Assets/EnemyBullet.cs"
+"Assets/EnemySpawner.cs"
 "Assets/Grenade.cs"
 "Assets/PistolBehaviour.cs"
 "Assets/Player.cs"

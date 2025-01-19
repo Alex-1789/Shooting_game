@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\EnemySpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\EnemySpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,19 +54,44 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Bullet.cs",
-              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Bullet.cs",
-              "RelativeDocumentMoniker": "Assets\\Bullet.cs",
-              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Bullet.cs",
-              "RelativeToolTip": "Assets\\Bullet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Enemy.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Enemy.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAADgv2AAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T22:42:49.423Z",
+              "WhenOpened": "2025-01-19T00:43:03.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "EnemySpawner.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\EnemySpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\EnemySpawner.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\EnemySpawner.cs",
+              "RelativeToolTip": "Assets\\EnemySpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-19T00:10:07.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bullet.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Bullet.cs",
+              "RelativeDocumentMoniker": "Assets\\Bullet.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Bullet.cs",
+              "RelativeToolTip": "Assets\\Bullet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-15T22:42:49.423Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "PlayerShoot.cs",
               "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\PlayerShoot.cs",
               "RelativeDocumentMoniker": "Assets\\PlayerShoot.cs",
@@ -66,12 +99,11 @@
               "RelativeToolTip": "Assets\\PlayerShoot.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwBsAAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T22:42:48.238Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T22:42:48.238Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "WeaponManager.cs",
               "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\WeaponManager.cs",
               "RelativeDocumentMoniker": "Assets\\WeaponManager.cs",
@@ -83,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Weapon.cs",
               "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Weapon.cs",
               "RelativeDocumentMoniker": "Assets\\Weapon.cs",
@@ -95,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AutomaticWeapon.cs",
               "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\AutomaticWeapon.cs",
               "RelativeDocumentMoniker": "Assets\\AutomaticWeapon.cs",
@@ -107,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NewBehaviourScript.cs",
               "DocumentMoniker": "C:\\Users\\meles\\Pulpit\\informatyka\\II sem mgr\\mam\\schooter\\Assets\\NewBehaviourScript.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Users\\meles\\Pulpit\\informatyka\\II sem mgr\\mam\\schooter\\Assets\\NewBehaviourScript.cs",
@@ -119,19 +151,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "player.cs",
-              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\player.cs",
-              "RelativeDocumentMoniker": "Assets\\player.cs",
-              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\player.cs",
-              "RelativeToolTip": "Assets\\player.cs",
+              "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Player.cs",
+              "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Player.cs",
+              "RelativeToolTip": "Assets\\Player.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAAAFsAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T22:42:48.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "camera.cs",
               "DocumentMoniker": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\camera.cs",
               "RelativeDocumentMoniker": "Assets\\camera.cs",

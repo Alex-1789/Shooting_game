@@ -2,38 +2,57 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class Enemy : MonoBehaviour
 {
     public Transform playerTransform;
-     public float moveSpeed = 0.5f; // Speed at which the enemy follows the player
-       public float fallSlowdown = 2.0f;
+    public float moveSpeed = 0.5f; // Speed at which the enemy follows the player
+    public float fallSlowdown = 2.0f;
+    public EnemySpawner spawner;
     private bool isOnStairs = false; // To track if the player is on the stairs
     private int points = 0;
+
+    private Text UIPoints;
     // Start is called before the first frame update
     void Start()
     {
-        
+
+
+
+
+        if (playerTransform == null)
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            if (player != null)
+            {
+                playerTransform = player.transform;
+            }
+        }
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-       if (playerTransform != null)
+        if (playerTransform != null)
         {
             RotateTowardsPlayer(); // Face the player
             FollowPlayer();        // Move toward the player
         }
+
+        //UpdatePointsText();
     }
 
-      private void FollowPlayer()
+    private void FollowPlayer()
     {
-          float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
+        float distanceToPlayer = Vector3.Distance(transform.position, playerTransform.position);
 
-    if (distanceToPlayer > 1f) // Stop moving when closer than 1 unit
-    {
-        Vector3 direction = (playerTransform.position - transform.position).normalized;
-        transform.position += direction * moveSpeed * Time.deltaTime;
-    }
+        if (distanceToPlayer > 1f) // Stop moving when closer than 1 unit
+        {
+            Vector3 direction = (playerTransform.position - transform.position).normalized;
+            transform.position += direction * moveSpeed * Time.deltaTime;
+        }
     }
     private void RotateTowardsPlayer()
     {
@@ -42,7 +61,7 @@ public class Enemy : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
-void FixedUpdate()
+    void FixedUpdate()
     {
         // Slow down falling by applying an upward force
         if (this.GetComponent<Rigidbody>().velocity.y < 0) // Only apply when falling
@@ -51,11 +70,33 @@ void FixedUpdate()
         }
     }
 
-     private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log(collision.gameObject.tag);
 
- if (collision.gameObject.CompareTag("Stairs"))
+    private void UpdatePointsText()
+    {
+        GameObject textObject = GameObject.FindGameObjectWithTag("Points");
+        Debug.Log(textObject.gameObject.tag);
+
+        UIPoints = textObject.GetComponent<Text>();
+
+        if (UIPoints == null)
+        {
+            Debug.Log("hello");
+        }
+        if (UIPoints != null)
+        {
+
+            Debug.Log("Znaleziono obiekt: ");
+            Debug.Log("Tag obiektu: ");
+            UIPoints.text = "Points: " + points;
+            Debug.Log(UIPoints.text);
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //Debug.Log(collision.gameObject.tag);
+
+        if (collision.gameObject.CompareTag("Stairs"))
         {
             isOnStairs = true;
             this.gameObject.GetComponent<Rigidbody>().useGravity = false;
@@ -65,7 +106,13 @@ void FixedUpdate()
 
         if (collision.gameObject.CompareTag("Weapon"))
         {
+            points++;
             Debug.Log(points);
+            if (spawner != null)
+            {
+                spawner.SpawnEnemy();
+            }
+
             Destroy(this.gameObject);
         }
     }
