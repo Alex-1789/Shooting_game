@@ -26,7 +26,7 @@ public class EnemyBehavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (count == 2000)
+        if (count == 1000)
         {
             ShootEnemy();
             count = 0;

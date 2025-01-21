@@ -375,6 +375,7 @@
 "Assets/PistolBehaviour.cs"
 "Assets/Player.cs"
 "Assets/PlayerShoot.cs"
+"Assets/PointsManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"

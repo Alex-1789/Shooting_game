@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+
 public class Enemy : MonoBehaviour
 {
     public Transform playerTransform;
@@ -10,15 +11,11 @@ public class Enemy : MonoBehaviour
     public float fallSlowdown = 2.0f;
     public EnemySpawner spawner;
     private bool isOnStairs = false; // To track if the player is on the stairs
-    private int points = 0;
 
-    private Text UIPoints;
+  
     // Start is called before the first frame update
     void Start()
     {
-
-
-
 
         if (playerTransform == null)
         {
@@ -29,6 +26,12 @@ public class Enemy : MonoBehaviour
             }
         }
 
+      /*  GameObject uiObject = GameObject.FindWithTag("Points");
+        if (uiObject != null)
+        {
+            UIPoints = uiObject.GetComponent<TextMeshProUGUI>();
+        }
+*/
 
     }
 
@@ -40,6 +43,7 @@ public class Enemy : MonoBehaviour
             RotateTowardsPlayer(); // Face the player
             FollowPlayer();        // Move toward the player
         }
+
 
         //UpdatePointsText();
     }
@@ -70,28 +74,6 @@ public class Enemy : MonoBehaviour
         }
     }
 
-
-    private void UpdatePointsText()
-    {
-        GameObject textObject = GameObject.FindGameObjectWithTag("Points");
-        Debug.Log(textObject.gameObject.tag);
-
-        UIPoints = textObject.GetComponent<Text>();
-
-        if (UIPoints == null)
-        {
-            Debug.Log("hello");
-        }
-        if (UIPoints != null)
-        {
-
-            Debug.Log("Znaleziono obiekt: ");
-            Debug.Log("Tag obiektu: ");
-            UIPoints.text = "Points: " + points;
-            Debug.Log(UIPoints.text);
-        }
-    }
-
     private void OnCollisionEnter(Collision collision)
     {
         //Debug.Log(collision.gameObject.tag);
@@ -100,14 +82,15 @@ public class Enemy : MonoBehaviour
         {
             isOnStairs = true;
             this.gameObject.GetComponent<Rigidbody>().useGravity = false;
-            Debug.Log("on stairs");
+           // Debug.Log("on stairs");
         }
 
 
         if (collision.gameObject.CompareTag("Weapon"))
         {
-            points++;
-            Debug.Log(points);
+            Debug.Log("punkt");
+            PointsManager.Instance.AddPoints(1);
+            
             if (spawner != null)
             {
                 spawner.SpawnEnemy();

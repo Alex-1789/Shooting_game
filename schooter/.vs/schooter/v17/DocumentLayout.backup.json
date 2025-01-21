@@ -59,7 +59,7 @@
               "RelativeDocumentMoniker": "Assets\\Enemy.cs",
               "ToolTip": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Assets\\Enemy.cs",
               "RelativeToolTip": "Assets\\Enemy.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAADgv2AAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-19T00:43:03.958Z",
               "EditorCaption": ""
@@ -74,8 +74,7 @@
               "RelativeToolTip": "Assets\\EnemySpawner.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-19T00:10:07.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-19T00:10:07.776Z"
             },
             {
               "$type": "Document",

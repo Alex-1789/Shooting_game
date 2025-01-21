@@ -92,18 +92,19 @@ public class Player : MonoBehaviour
     // Detect collision with the stairs
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision.gameObject.tag);
-        Debug.Log(collision.gameObject.name);
+       // Debug.Log(collision.gameObject.tag);
+        //Debug.Log(collision.gameObject.name);
         if (collision.gameObject.CompareTag("Stairs"))
         {
             isOnStairs = true;
             this.gameObject.GetComponent<Rigidbody>().useGravity = false;
-            Debug.Log("on stairs");
+            //Debug.Log("on stairs");
         }
 
          if (collision.gameObject.CompareTag("Enemy Weapon"))
         {
             //Destroy(this.gameObject);
+             PointsManager.Instance.ResetPoints();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
@@ -114,7 +115,7 @@ public class Player : MonoBehaviour
         {
             isOnStairs = false;
             
-            Debug.Log("not stairs");
+            //Debug.Log("not stairs");
         }
     }
 }
