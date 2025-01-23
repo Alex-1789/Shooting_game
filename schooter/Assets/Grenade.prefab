@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2587822181332368557}
   m_Layer: 0
   m_Name: Grenade
-  m_TagString: Weapon
+  m_TagString: Grenade
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53c8170575fafdc448818de6e3484d8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 5
+  delay: 3
   explosionRadius: 2.5
   explosionForce: 500
   explosionEffect: {fileID: 4646766234140923853, guid: 2c4d760797308aa42b45cb721561f1ec,

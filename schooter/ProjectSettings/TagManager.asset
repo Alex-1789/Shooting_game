@@ -9,6 +9,7 @@ TagManager:
   - Weapon
   - Enemy Weapon
   - Points
+  - Grenade
   layers:
   - Default
   - TransparentFX

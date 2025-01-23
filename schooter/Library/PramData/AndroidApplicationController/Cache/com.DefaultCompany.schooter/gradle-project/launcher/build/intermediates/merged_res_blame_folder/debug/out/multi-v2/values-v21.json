@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.schooter\\gradle-project\\launcher\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "map": [
+                {
+                    "source": "C:\\MGR_II\\MAM\\Projekt\\schooter (1)\\schooter\\Library\\PramData\\AndroidApplicationController\\Cache\\com.DefaultCompany.schooter\\gradle-project\\unityLibrary\\build\\intermediates\\packaged_res\\debug\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "8",
+                        "endOffsets": "154"
+                    }
+                }
+            ]
+        }
+    ]
+}

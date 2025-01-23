@@ -5,7 +5,7 @@ public class Grenade : MonoBehaviour
     public float delay = 3f; // Time in seconds before explosion
     public float explosionRadius = 5f; // Radius of the explosion effect
     public float explosionForce = 500f; // Force of the explosion
-    public GameObject explosionEffect; // Optional: Add a particle effect for the explosion
+    public GameObject explosionEffect; // Particle effect for the explosion
 
     private bool hasExploded = false;
 
@@ -21,7 +21,6 @@ public class Grenade : MonoBehaviour
 
         hasExploded = true;
 
-        // Optional: Instantiate explosion particle effect
         if (explosionEffect != null)
         {
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
@@ -39,11 +38,20 @@ public class Grenade : MonoBehaviour
                 rb.AddExplosionForce(explosionForce, transform.position, explosionRadius);
             }
 
-            // Optional: Check for specific objects to damage (e.g., tagged as "Enemy")
             if (nearbyObject.CompareTag("Enemy"))
             {
-                // Add damage logic here
-                Debug.Log("Enemy hit by explosion!");
+                // Add points
+                PointsManager.Instance.AddPoints(1);
+
+                // Spawn a new enemy if the spawner exists
+                Enemy enemyScript = nearbyObject.GetComponent<Enemy>();
+                if (enemyScript != null && enemyScript.spawner != null)
+                {
+                    enemyScript.spawner.SpawnEnemy();
+                }
+
+                // Destroy the enemy object
+                Destroy(nearbyObject.gameObject);
             }
         }
 
