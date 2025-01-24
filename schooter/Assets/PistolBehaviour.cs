@@ -8,7 +8,7 @@ public class EnemyBehavior : MonoBehaviour
     public GameObject bulletPrefab;
     public float bulletSpeed;
     private int count = 0;
-    public Transform playerTransform; // Reference to the player's transform
+    public Transform playerTransform; 
 
     // Start is called before the first frame update
     void Start()
@@ -41,10 +41,8 @@ public class EnemyBehavior : MonoBehaviour
     {
         if (playerTransform == null) return;
 
-        // Calculate direction toward the player
         Vector3 directionToPlayer = (playerTransform.position - bulletSpawnTransform.position).normalized;
 
-        // Spawn the bullet and apply force
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnTransform.position, Quaternion.identity);
         Rigidbody bulletRigidbody = bullet.GetComponent<Rigidbody>();
         if (bulletRigidbody != null)

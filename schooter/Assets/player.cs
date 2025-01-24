@@ -6,30 +6,27 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    public Camera playerCamera; // Reference to the player's camera
+    public Camera playerCamera; 
     private bool moveForward = false;
     private bool moveBackward = false;
     private bool moveLeft = false;
     private bool moveRight = false;
     public float moveSpeed = 5f;
     public float jumpForce = 0.5f;
-    private bool isOnStairs = false; // To track if the player is on the stairs
-    public float stairsClimbSpeed = 1.0f; // Speed for climbing stairs
+    private bool isOnStairs = false; 
+    public float stairsClimbSpeed = 1.0f; 
     public float fallSlowdown = 2.0f;
 
     void Update()
     {
         Vector3 moveDirection = Vector3.zero;
 
-        // Get the forward and right directions relative to the camera's orientation
         Vector3 forward = playerCamera.transform.forward;
         Vector3 right = playerCamera.transform.right;
 
-        // Remove the y component to ensure movement stays on a horizontal plane
         forward.y = 0;
         right.y = 0;
 
-        // Normalize the directions to ensure consistent speed
         forward.Normalize();
         right.Normalize();
         if ((moveForward || moveBackward || moveLeft || moveRight) && isOnStairs)
@@ -46,12 +43,6 @@ public class Player : MonoBehaviour
             this.gameObject.GetComponent<Rigidbody>().useGravity = true;
         }
 
-
-
-        // If the player is on stairs, add upward movement
-
-
-        // Apply the movement to the player
         transform.position += moveDirection * moveSpeed * Time.deltaTime;
     }
 
@@ -82,29 +73,25 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Slow down falling by applying an upward force
-        if (this.GetComponent<Rigidbody>().velocity.y < 0) // Only apply when falling
+        if (this.GetComponent<Rigidbody>().velocity.y < 0)
         {
             this.GetComponent<Rigidbody>().AddForce(Vector3.up * fallSlowdown, ForceMode.Acceleration);
         }
     }
 
-    // Detect collision with the stairs
     private void OnCollisionEnter(Collision collision)
     {
-       // Debug.Log(collision.gameObject.tag);
-        //Debug.Log(collision.gameObject.name);
+
         if (collision.gameObject.CompareTag("Stairs"))
         {
             isOnStairs = true;
             this.gameObject.GetComponent<Rigidbody>().useGravity = false;
-            //Debug.Log("on stairs");
+
         }
 
          if (collision.gameObject.CompareTag("Enemy Weapon"))
         {
-            //Destroy(this.gameObject);
-             PointsManager.Instance.ResetPoints();
+            PointsManager.Instance.ResetPoints();
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
@@ -114,8 +101,7 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Stairs"))
         {
             isOnStairs = false;
-            
-            //Debug.Log("not stairs");
+
         }
     }
 }

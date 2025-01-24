@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour
 {
-    public Weapon[] weapons; // Array of weapons
+    public Weapon[] weapons; 
     private int currentWeaponIndex = 0;
 
-    public GameObject grenadePrefab; // Grenade prefab
-    public Transform grenadeSpawnPoint; // Spawn point for grenades
+    public GameObject grenadePrefab; 
+    public Transform grenadeSpawnPoint;
 
     void Start()
     {
-        // Ensure only the current weapon is active
         for (int i = 0; i < weapons.Length; i++)
         {
             weapons[i].gameObject.SetActive(i == currentWeaponIndex);
@@ -19,23 +18,21 @@ public class WeaponManager : MonoBehaviour
 
     public void FireCurrentWeapon()
     {
-        // Fire the currently selected weapon
         weapons[currentWeaponIndex].Shoot();
     }
 
     public void SwitchToWeapon1()
     {
-        SwitchWeapon(0); // Switch to Weapon 1
+        SwitchWeapon(0);
     }
 
     public void SwitchToWeapon2()
     {
-        SwitchWeapon(1); // Switch to Weapon 2
+        SwitchWeapon(1);
     }
 
     public void ThrowGrenade()
     {
-        // Instantiate a grenade at the spawn point
         Instantiate(grenadePrefab, grenadeSpawnPoint.position, grenadeSpawnPoint.rotation);
     }
 
@@ -43,10 +40,8 @@ public class WeaponManager : MonoBehaviour
     {
         if (index < 0 || index >= weapons.Length) return;
 
-        // Deactivate the current weapon
         weapons[currentWeaponIndex].gameObject.SetActive(false);
 
-        // Switch to the new weapon
         currentWeaponIndex = index;
         weapons[currentWeaponIndex].gameObject.SetActive(true);
 

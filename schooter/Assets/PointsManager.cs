@@ -39,7 +39,7 @@ public class PointsManager : MonoBehaviour
 
     public void AddPoints(int value)
     {
-        points += value; // Dodanie punktów
+        points += value;
         Debug.Log("punkt " + points);
         UpdatePointsText();
     }

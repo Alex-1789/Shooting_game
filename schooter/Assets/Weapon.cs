@@ -16,12 +16,10 @@ public abstract class Weapon : MonoBehaviour
         {
             nextFireTime = Time.time + fireRate;
 
-            // Instantiate the projectile
             GameObject projectile = Instantiate(projectilePrefab, firePoint.position , fireRotation.rotation);
 
-            // Apply force to the projectile's Rigidbody
             Rigidbody rb = projectile.GetComponent<Rigidbody>();
-            rb.AddForce(firePoint.position*5f); // Adjust the force multiplier (e.g., 1000) as needed
+            rb.AddForce(firePoint.position*5f); 
 
         }
     }
